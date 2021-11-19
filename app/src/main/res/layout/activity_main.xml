@@ -82,4 +82,13 @@
         android:layout_marginRight="20dp"
         android:hint="Result" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="99dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/calculator" />
+
 </LinearLayout>
