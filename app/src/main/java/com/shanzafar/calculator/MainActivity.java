@@ -29,8 +29,49 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 int f, s, a;
+                f = Integer.parseInt(et1.getText().toString());
+                s = Integer.parseInt(et2.getText().toString());
+                a = f + s;
+                tv.setText("Result = " +a);
+
             }
         });
+        sub.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+
+                int f, s, a;
+                f = Integer.parseInt(et1.getText().toString());
+                s = Integer.parseInt(et2.getText().toString());
+                a = f - s;
+                tv.setText("Result = " +a);
+
+                }
+                });
+                    mul.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+
+                            int f, s, a;
+                            f = Integer.parseInt(et1.getText().toString());
+                            s = Integer.parseInt(et2.getText().toString());
+                            a = f * s;
+                            tv.setText("Result = " +a);
+
+                        }
+                    });
+                        div.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+
+                                int f, s, a;
+                                f = Integer.parseInt(et1.getText().toString());
+                                s = Integer.parseInt(et2.getText().toString());
+                                a = f / s;
+                                tv.setText("Result = " +a);
+
+                            }
+                        });
+        }
 
     }
-}
