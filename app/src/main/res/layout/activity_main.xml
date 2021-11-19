@@ -8,17 +8,29 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="99dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/calculator" />
+
     <EditText
         android:id="@+id/et1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="20dp"
         android:ems="10"
         android:hint="Enter 1st Number"
         android:inputType="number"
-        android:minHeight="54dp" />
+        android:minHeight="54dp"
+        android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/et2"
@@ -41,6 +53,7 @@
         android:layout_marginRight="20dp"
         android:background="@color/black"
         android:text="ADDITION"
+        android:textColor="@color/white"
         app:rippleColor="@color/purple_200" />
 
     <Button
@@ -51,7 +64,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/black"
-        android:text="SUBTRACTION" />
+        android:text="SUBTRACTION"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/mul"
@@ -61,7 +75,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/black"
-        android:text="MULTIPLICATION" />
+        android:text="MULTIPLICATION"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/div"
@@ -71,7 +86,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/black"
-        android:text="DVISION" />
+        android:text="DVISION"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/tv"
@@ -81,14 +97,5 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:hint="Result" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="120dp"
-        android:layout_height="99dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/calculator" />
 
 </LinearLayout>
